@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<div> <span id="s1"> </span> will take <span id="s2"> </span> days to reach Mars.</div><br><br>
+	<div> <span id="s3"> </span> will take <span id="s4"> </span> days to reach the Moon.</div><br><br>
+
+	<script type="text/javascript">
+
+		let name = "Mars_Shuttle";
+		let name2 = "Moon_Shuttle";
+		let speed = 17500;
+		let Dmars = 225000000;
+		let Dmoon = 384400;
+		let MPK = 0.612;
+
+		console.log(typeof name);
+		console.log(typeof speed);
+		console.log(typeof Dmars);
+		console.log(typeof Dmoon);
+		console.log(typeof MPK);		
+
+		//Determinitation of the number of days it would take to raach mars 
+
+		let M2M = (Dmars*MPK);
+		//console.log(M2M);
+
+		//print
+		let H2M = (M2M/speed);
+		//console.log(H2M);
+
+		let D2M = (H2M/24);
+		//console.log(D2M);
+
+		//print
+		document.getElementById('s1').innerHTML = name;
+		document.getElementById('s2').innerHTML = D2M;
+			
+
+		//Determinitation of the number of days it would take to raach moon
+
+		let M2M2 = (Dmoon*MPK);
+		//console.log(M2M2);
+
+		let H2M2 = (M2M2/speed);
+		//console.log(H2M2);
+
+		let D2M2 = (H2M2/24);
+		//console.log(D2M2);
+
+		document.getElementById('s3').innerHTML = name2;
+		document.getElementById('s4').innerHTML = D2M2;
+			
+
+
+	</script>
+
+</body>
+</html>
