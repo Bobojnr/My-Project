@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>RESIZING AN OPENED WINDOW</h1>
+		 <button type="button" id="openbtn">Open Window</button>
+		 <button type="button" id="resizebtn">Resize By</button>
+		 <!-- <button onclick="reizeToWin()">Resize To</button> -->
+		 <button type="button" id="resizebtn2">Resize By</button>
+    <script type="text/javascript">
+
+    	var newWindow;
+
+    	function openWin() {
+    		newWindow = window.open("", "_blank", "width=300, height=200");
+    		newWindow.document.write("I am new window")
+    	}
+    	function resizeWin() {
+    		newWindow.resizeBy(200, 200);
+    		newWindow.focus();	
+    	}
+    	function reizeToWin() {
+    		newWindow.resizeTo(100, 100);
+    		newWindow.focus();
+    	}
+    	document.getElementById('openbtn').addEventListener("click", openWin);
+    	document.getElementById('resizebtn').addEventListener("click", resizeWin);
+    	document.getElementById('resizebtn2').addEventListener("click", resizeToWin);
+    	
+
+  			
+    </script>
+</body>
+</html>
