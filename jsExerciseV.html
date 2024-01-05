@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+			// Question 1
+
+			// 1. Write a JavaScript program that displays the largest integer among two integers.
+
+
+			let a = 200;
+			let b = 200;
+
+			if (a<b){
+			console.log("a is less than b");}
+
+			else if (b<a){console.log("b is less than a");}
+
+			else {console.log('a and b are the same')};
+			
+
+			//Question 2
+			//2.Write a JavaScript conditional statement to find the sign of the product of three numbers. 
+			//Display an alert box with the specified sign. 
+			//Sample numbers : 3, -7, 2 
+ 			//Output : The sign is -
+
+			//first attempt code didnt work and no error was shown
+ 			let c = 3;
+ 			let d = -7;
+ 			let e = 2;
+			let product = c*d*e;
+
+			function findSign(c,d,e){
+				
+				if (product>0){ alert("The sign is +");}
+				else if (product<0){alert("The sign is -");}
+				else alert("zero")
+			};
+
+			//second attempt
+
+			var x = 3;
+			var y = -7;
+			var z = 2;
+
+			if (x > 0 && y > 0 && z > 0) {
+ 			 alert("The sign is +");
+				} else if (x < 0 && y < 0 && z < 0) {
+ 				 alert("The sign is -");
+				} else if (x > 0 && y < 0 && z < 0) {
+ 				 alert("The sign is +");
+				} else if (x < 0 && y > 0 && z < 0) {
+ 				 alert("The sign is +");
+				} else {
+ 				 alert("The sign is -");
+				}
+
+
+// 			Question3
+// 			Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the results.
+
+
+
+			numbers=[0, -1, 4].sort((x,y) => x - y);
+			alert(numbers);
+
+
+			//Question4
+// 			Write a JavaScript conditional statement to find the largest of five numbers. Display an alert 
+// box to show the results.
+
+
+			function LargestNum(num1, num2, num3, num4, num5){ return Math.max(num1, num2, num3, num4, num5)
+			};
+
+			LargestNumber = LargestNum(191, 181, 153, 2456, 2426, 242625);
+			alert(LargestNumber);
+
+// 			Question 5
+// 			Use JavaScript to produce a range of numbers between (1 and 10). Make good use of 
+// operators.
+
+			let range =[];
+			for (let i=2; i<10; i++){
+				range.push(i);
+			}
+			console.log(range);
+			// let i=1; (i> 1 && i<10 i++){}
+			// console.log(i);
+			
+			
+		</script>
+</body>
+</html>
