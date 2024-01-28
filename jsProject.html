@@ -3,55 +3,56 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>My js exercise</title>
 </head>
 <body>
-
-	
 	<script type="text/javascript">
-		
-		// <1 you still need brest milk
-		// 1-2 water
-		// 3-5 bobo
-		// 6-12 caprisonne
-		// 13-17 Viju Milk
-		// 18-30 SMirnoff
-		// 31-45 Origin Bitters
-		// 46-60 Spirit
-		// >60 Ogogoro
-		// =male, female=Malt.
+	//question 1	
+	function findLargestInteger(a,b){
+    return a>b? a : b;
+	}
+let a = prompt("Enter first integer:");
+let b = prompt("Enter second integer:");
 
-		let age =40;
-		
-		
-		if(age<1){
-			console.log('You still need brest mikl');
-			}
-			else if (age>1 && age<=2){
-			console.log('Water');
-			}
-			else if (age>2 && age<=5){
-				console.log('bobo');
-			}
-			else if (age>5 && age<=12){
-				console.log('Caprisonne')
-			}
-			else if (age>13 && age<=17){
-				console.log('Viju Milk')
-			}
-			else if (age>17 && age<=30){
-				console.log('SMirnoff')
-			}
-			else if (age>31 && age<=45){
-				console.log('Origin Bitters')
-			}
-			else if (age>45 && age<=60){
-				console.log('Spirit')
-			}
-			else if (age>60 ){
-				console.log('Ogogoro')
-			}
-			else {console.log('Not eligble for alcohol')};
+let largest = findLargestInteger(a, b);
+
+alert("The largest integer is: " + largest);
+
+ //question2 
+	for (let i = 0; i <= 15; i++) {
+    if (i % 2 === 0) {
+        console.log('this number is even');} 
+        else{
+        console.log('this number is odd');}
+	}
+
+//question 3
+
+	function computeAverage(grades){
+    let sum = 0;
+    for (let i = 0; i < grades.length; i++) {
+        sum += grades[i];
+    }
+    return sum / grades.length;
+}
+let Damilola = 80;
+let john = 77;
+let Nicholas = 88;
+let Patrice = 95;
+let Famous = 68;
+
+let grades = [Damilola, john, Nicholas, Patrice, Famous];
+
+let average = computeAverage(grades);
+
+console.log(`The average grade is: ${average}`);
+
+ //question 5
+	for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
 
 	</script>
 
